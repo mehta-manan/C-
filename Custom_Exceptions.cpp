@@ -10,25 +10,11 @@ public:
     }
 };
 
-void ThrowExcepetion()
-{
-    MyException myException;
-    throw myException;
-}
 int main()
 {
-    // const char *p = "Hello world";
-    // const char * p2 = p;
-    // while((*p2) != '\0')
-    // {
-    //     printf("%c",*p2);
-    //     p2++;
-    // }
-    // std::cout << p;
-    // to_string(int);
     try
     {
-        ThrowExcepetion();
+        throw MyException();
     }
     catch (MyException me)
     {
