@@ -1,10 +1,9 @@
 #include <iostream>
 #include <ctime>
-#include <numeric>
 
 int main()
 {
-    // srand() - Generate new seed for rand()  function.
+    // srand() - Generate new seed for rand() function.
     // Takes unsigned int as argument as seed number.
     // Default value is 1.
 
