@@ -59,7 +59,7 @@ int main()
     int *int_ptr = (int *)&my_char;
     *int_ptr = 10; // run-time error
     // C++ static cast
-    // int *int_ptr_2 = static_cast<int *>(&c); // compile error: invalid type conversion
+    //int *int_ptr_2 = static_cast<int *>(&my_char); // compile error: invalid type conversion
 
     // ----------------------------------------------------
 
