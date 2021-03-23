@@ -62,6 +62,7 @@ int main()
 }
 
 // Output:
-// ad is NULL
 // d is not NULL
 // d2 is not NULL
+// ad is NULL
+// ad2 is not NULL

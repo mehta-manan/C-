@@ -28,16 +28,16 @@ int main()
     AnotherDerived *ad = static_cast<AnotherDerived *>(base);
 
     if (d)
-        std::cout << "ad is not NULL" << std::endl;
-    else
-        std::cout << "ad is NULL" << std::endl;
-
-    if (ad)
         std::cout << "d is not NULL" << std::endl;
     else
         std::cout << "d is NULL" << std::endl;
+
+    if (ad)
+        std::cout << "ad is not NULL" << std::endl;
+    else
+        std::cout << "ad is NULL" << std::endl;
 }
 
 // Output:
-// ad is not NULL
 // d is not NULL
+// ad is not NULL
