@@ -22,17 +22,17 @@ int main()
     Base *base = derived;
 
     // downcast - explicit
-    // Derived *d = (Derived *)base;
+    // Derived *d = (Derived *)base; C style
     Derived *d = static_cast<Derived *>(base);
 
     AnotherDerived *ad = static_cast<AnotherDerived *>(base);
 
-    if (ad)
+    if (d)
         std::cout << "ad is not NULL" << std::endl;
     else
         std::cout << "ad is NULL" << std::endl;
 
-    if (d)
+    if (ad)
         std::cout << "d is not NULL" << std::endl;
     else
         std::cout << "d is NULL" << std::endl;

@@ -18,8 +18,6 @@ public:
     }
 };
 
-// ----------------------------------------------------
-
 class A
 {
 };
@@ -30,30 +28,11 @@ class B : private A
 
 int main()
 {
-    // C style cast
-
-    //int to double implicit
-    int a = 5;
-    double b = a;
-
-    // double to int implicit
-    double c = 5.25;
-    int d = c;
-
-    // double to int explicit - safe style cast
-    double e = 5.56;
-    int f = (int)e + 5.67;
-
-    // -----------------------------------------------------------------------------------------
-
-    // C++ style cast
-
     double g = 3.89;
     int h = static_cast<int>(g) + 5.67;
 
     // ----------------------------------------------------
 
-    // 1. static_cast<type>(expression)
     char my_char = 'a';
     // C style no type compatibility checking
     int *int_ptr = (int *)&my_char;

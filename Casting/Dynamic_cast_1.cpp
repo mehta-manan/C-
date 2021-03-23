@@ -33,15 +33,12 @@ int main()
 
     // downcast - explicit
     Derived *d = dynamic_cast<Derived *>(base); // d == (some address)
-    
+
     Derived *d2 = static_cast<Derived *>(base);
 
     AnotherDerived *ad = dynamic_cast<AnotherDerived *>(base); // ad == NULL
 
-    if (ad)
-        std::cout << "ad is not NULL" << std::endl;
-    else
-        std::cout << "ad is NULL" << std::endl;
+    AnotherDerived *ad2 = static_cast<AnotherDerived *>(base);
 
     if (d)
         std::cout << "d is not NULL" << std::endl;
@@ -52,6 +49,16 @@ int main()
         std::cout << "d2 is not NULL" << std::endl;
     else
         std::cout << "d2 is NULL" << std::endl;
+
+    if (ad)
+        std::cout << "ad is not NULL" << std::endl;
+    else
+        std::cout << "ad is NULL" << std::endl;
+
+    if (ad2)
+        std::cout << "ad2 is not NULL" << std::endl;
+    else
+        std::cout << "ad2 is NULL" << std::endl;
 }
 
 // Output:
