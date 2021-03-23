@@ -13,10 +13,10 @@ int main()
     // error: (*int_ptr)++;
 
     int *int_ptr_2 = const_cast<int *>(int_ptr);
-    std::cout << "*int_ptr_2: " << *int_ptr << std::endl;
+    std::cout << "*int_ptr_2: " << *int_ptr_2 << std::endl;
 
     (*int_ptr_2)++;
-    std::cout << "*int_ptr_2: " << *int_ptr << std::endl;
+    std::cout << "*int_ptr: " << *int_ptr << " == *int_ptr_2: " << *int_ptr_2 << std::endl;
 
     // --------------------------------------------------------
 
