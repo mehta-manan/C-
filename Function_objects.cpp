@@ -29,7 +29,6 @@ int main()
 
         std::string operator()(std::string str)
         {
-
             return myString + str;
         }
     };

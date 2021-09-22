@@ -42,7 +42,7 @@ int main()
     for (ScoreMapConstiter it = map.begin(); it != map.end(); it++)
     {
         // std::pair <string, int>
-        auto&  key = it->first; // ->
+        auto& key = it->first; // ->
         auto& value = it->second;
         std::cout << key << " " << value << std::endl;
     }
@@ -50,7 +50,7 @@ int main()
     // range loop for above
     for( auto kv : map)
     {
-        auto&  key = kv.first; //.
+        auto& key = kv.first; //.
         auto& value = kv.second;
         std::cout << key << " " << value << std::endl;
     }
